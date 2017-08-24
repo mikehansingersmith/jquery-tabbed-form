@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabbed Form</title>
+	<link href="css/reset.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/animation.js"></script>
+  <script type="text/javascript" src="js/validation.js"></script>
+
+</head>
+<body>
+  <form name="myForm" onsubmit="return validateForm()">
+  <ul>
+    <li class="title">Who are you?</li>
+    <li class="fields">
+      <label>*First Name:</label>
+      <input id="first-name" class="req" type="text" /><br />
+      <span class="required" style="display: none">Please complete this field</span>
+      <label>Middle Name:</label>
+      <input id="middle-name" type="text" /><br />
+      <label>Last Name:</label>
+      <input id="last-name" type="text" /><br />
+      <label>*Email:</label>
+      <input id="email" class="req" type="text" />
+      <span class="required" style="display: none">Please complete this field</span>
+    </li>
+    <li class="title">Where are you?</li>
+    <li class="fields">
+      <label>City:</label>
+      <input id="city" type="text" /><br />
+      <label>*State:</label>
+      <input id="state" type="text" class="req" /><br />
+      <span class="required" style="display: none">Please complete this field</span>
+      <label>Country:</label>
+      <input id="country" type="text" />
+    </li>
+    <li class="title">What do you do?</li>
+    <li class="fields">
+      <label>*Occupation:</label>
+      <input id="occupation" class="req" type="text" /><br />
+      <span class="required" style="display: none">Please complete this field</span>
+      <label>Company:</label>
+      <input id="company" type="text" /><br />
+      <label>Location:</label>
+      <input id="location" type="text" />
+    </li>
+  </ul>
+  <input type="submit" value="Submit Form" />
+  </form>
+
+</body>
+</html>
